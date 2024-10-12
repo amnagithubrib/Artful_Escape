@@ -1,0 +1,117 @@
+.slider-container {
+    margin: 0 auto;
+}
+
+.slider-slide {
+    position: relative;
+}
+
+.slider-image {
+    width: 100%;
+    height: 1000px; /* Adjust height as needed */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements horizontally */
+    justify-content: flex-end; /* Align items to the bottom */
+    color: white;
+    padding: 20px;
+}
+
+.slider-title {
+    position: absolute; /* Position it absolutely within the overlay */
+    top: 80px; /* Adjust the distance from the top */
+    left: 50%; /* Center it horizontally */
+    transform: translateX(-50%); /* Centering adjustment */
+    font-size: 2rem;
+    font-weight: bold;
+    color: white; /* Ensure the title is visible against the background */
+    z-index: 2; /* Ensure it appears above other content */
+}
+
+.slider-content {
+    text-align: center;
+}
+
+.sale-badge {
+    background-color: orange;
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.product-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.add-to-cart-btn {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+    background-color: darkorange;
+}
+
+.center-image {
+    width: 600px; /* Adjust width as needed */
+    height: auto; /* Keep aspect ratio */
+    z-index: 1; /* Place above the background */
+}
+
+.center-image-container {
+    position: relative; /* Position the container for absolute positioning of the button */
+}
+
+.quick-view-btn {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    color: black; /* Text color */
+    padding: 10px 20px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    position: absolute; /* Position it absolutely within the overlay */
+    bottom: 20px; /* Distance from the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Centering adjustment */
+    z-index: 3; /* Above other content */
+    opacity: 0; /* Hidden by default */
+    visibility: hidden; /* Hidden by default */
+    
+}
+
+.center-image-container:hover .quick-view-btn {
+    opacity: 1; /* Show button on hover */
+    visibility: visible; /* Show button on hover */
+    background-color: rgba(240, 239, 238, 0.8); /* Change color on hover */
+    transform: translateX(-50%) translateY(-5px); 
+    width: 110%;
+}

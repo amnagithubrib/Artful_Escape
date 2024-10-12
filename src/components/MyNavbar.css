@@ -1,0 +1,32 @@
+/* navbarStyles.css */
+
+/* Existing styles */
+.navbar {
+    background-color: #f8f9fa; /* Light gray background */
+}
+
+.navbar-brand {
+    display: flex; /* Align items in the brand */
+    align-items: center; /* Center the logo vertically */
+}
+
+.navbar-brand img {
+    margin-right: 10px; /* Space between logo and brand text */
+}
+
+.nav-link {
+    color: #333; /* Dark color for links */
+}
+
+.nav-link:hover {
+    color: #fcc510; /* Green hover color */
+}
+
+/* New custom font style */
+.custom-font {
+    font-family: 'Bahianita', sans-serif; /* Ensure this font is loaded */
+    font-weight: 400; /* Normal weight */
+    color: rgb(204, 204, 204); /* Gray color */
+    font-size: 30px; /* Font size */
+    line-height: 41px; /* Line height */
+}
